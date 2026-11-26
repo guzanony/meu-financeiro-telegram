@@ -1,0 +1,31 @@
+name: Relato de erro
+description: Informe um comportamento inesperado sem expor dados financeiros ou credenciais.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Não inclua token Telegram, senhas SMTP, dados pessoais ou anexos reais."
+  - type: textarea
+    id: description
+    attributes:
+      label: O que aconteceu?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir?
+      placeholder: "1. ...\n2. ..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit ou versão
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true

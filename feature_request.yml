@@ -1,0 +1,17 @@
+name: Sugestão de funcionalidade
+description: Proponha uma melhoria para o bot.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Qual problema esta sugestão resolve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+    validations:
+      required: true
